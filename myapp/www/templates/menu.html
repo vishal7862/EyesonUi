@@ -1,0 +1,32 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="right">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="right">
+        <ion-header-bar class="bar-stable">
+            <div class="title">Menu</div>
+        </ion-header-bar>
+        <ion-content padding="false" class="side-menu-right has-header">
+            <ion-list>
+                <ion-item class="item-divider">Settings</ion-item>
+                <ion-toggle toggle-class="toggle-calm">Notification Status</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Call Tracker Status</ion-toggle>
+                <ion-toggle toggle-class="toggle-royal">OnOff Status</ion-toggle>
+            </ion-list>
+            <ion-list>
+                <ion-item class="item-divider">Tabs</ion-item>
+            </ion-list>
+            <a ui-sref="menu.eyesOn" menu-close="" class="button button-positive button-block ">Eyes On</a>
+            <a ui-sref="menu.watchedBy" menu-close="" class="button button-positive button-block ">Watched By</a>
+            <a ui-sref="menu.invited" menu-close="" class="button button-positive button-block ">Invited</a>
+            <a ui-sref="menu.notifications" menu-close="" class="button button-positive button-block ">Notifications</a>
+            <ion-list></ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
